@@ -1,8 +1,18 @@
-
 import base64
 from os import system
 from colorama import init, deinit, Fore, Back, Style
 init(autoreset=True)
+"""for colored output run from command prompt on windows"""
+
+banner = """"██████╗  █████╗ ███████╗███████╗ ██████╗ ██╗  ██╗
+██╔══██╗██╔══██╗██╔════╝██╔════╝██╔════╝ ██║  ██║
+██████╔╝███████║███████╗█████╗  ███████╗ ███████║
+██╔══██╗██╔══██║╚════██║██╔══╝  ██╔═══██╗╚════██║
+██████╔╝██║  ██║███████║███████╗╚██████╔╝     ██║
+╚═════╝ ╚═╝  ╚═╝╚══════╝╚══════╝ ╚═════╝      ╚═╝"""
+
+print(Fore.RED+banner)
+
 def encode(txt):
     encoded = base64.b64encode(encode_txt)
     print("your encoded text for '{}' is : ".format(encode_txt.decode("utf-8")),encoded.decode("utf-8"))
@@ -32,4 +42,5 @@ try:
             pass
 except:
     print(Fore.RED + "something went wrong, it maybe because text you enterd is wrong try again.")
+
 """created by Atul"""
