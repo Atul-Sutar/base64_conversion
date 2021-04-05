@@ -32,3 +32,4 @@ try:
             pass
 except:
     print(Fore.RED + "something went wrong, it maybe because text you enterd is wrong try again.")
+"""created by Atul"""
