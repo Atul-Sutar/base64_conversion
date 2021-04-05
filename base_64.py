@@ -27,7 +27,7 @@ print(Fore.WHITE + "Type 1,2 or 3 to quit\n1] covert to base64\n2] conver from b
 
 try:
     while True:
-        option = input("enter option option[1,2,3] : ")
+        option = input("\nEnter option option[1,2,3] : ")
         if option == "1":
             in_enco  = input("enetr txt to encode : ")
             encode_txt =  in_enco.encode()
